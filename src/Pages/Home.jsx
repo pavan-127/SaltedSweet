@@ -38,7 +38,7 @@ function Home() {
             </section>
 
             {/* Categories Section */}
-            <section id="categories" className="container my-5">
+            <section id="categories" className="container my-3">
                 <h2 className="text-center text-white mb-4">🥗 Browse by Categories</h2>
                 <div className="row g-4 justify-content-center">
                     <div className="col-md-3 category-card">
@@ -69,7 +69,7 @@ function Home() {
             </section>
 
             {/* Featured Products Section */}
-            <section className="container my-5">
+            <section className="container my-3">
                 <h2 className="text-center text-white mb-4">🍕 Featured Products</h2>
                 <div className="row g-5 justify-content-center">
                     {featuredItems.map((item, index) => (
