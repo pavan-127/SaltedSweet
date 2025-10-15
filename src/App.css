@@ -101,6 +101,23 @@ justify-content: center;
   background-color: #28a745;
   opacity: 0.8;
 }
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    -webkit-backdrop-filter: blur(10px);
+    
+   /*height: var(--navbar-height);*/
+    background: var(--navbar-bg);
+
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+  
+
+
+}
 
 /*veg*/
 .veg-card {

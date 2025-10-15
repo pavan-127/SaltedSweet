@@ -45,6 +45,14 @@ footer {
     bottom: 0;
     width: 100%;
     -webkit-backdrop-filter: blur(10px);
+    
+   /*height: var(--navbar-height);*/
+    background: var(--navbar-bg);
+
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+  
 
 
 }

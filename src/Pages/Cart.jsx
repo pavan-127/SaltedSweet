@@ -137,8 +137,13 @@ function Cart() {
                     </div>
                 </>
             ) : (
-                <div className="text-center text-danger mt-5">Your Cart is Empty 🛒</div>
+                <div className="text-center text-white mt-5">Your Cart is Empty 🛒</div>
             )}
+            <footer className="Footer text-center py-2 text-dark fixed-bottom">
+                <div className="container">
+                    <p className="mb-1">&copy; 2025 Food Delivery Service. All rights reserved.</p>
+                </div>
+            </footer>
         </div>
     );
 }

@@ -20,7 +20,7 @@ function Order() {
     };
 
     return (
-        <div className="container py-5 mt-3">
+        <div className="container py-5 mt-4">
             <div className="d-flex justify-content-between align-items-center mb-3">
                 <h1 className="text-primary">📜 Purchase History</h1>
                 {orders.length > 0 && (
@@ -59,10 +59,13 @@ function Order() {
                 </div>
             )}
 
-            <footer className="text-center py-1 text-light fixed-bottom border-top -webkit-backdrop-filter: blur(15px);">
-                <p className="mb-0">&copy; 2025 Food Delivery Service. All rights reserved.</p>
+             <footer className="Footer text-center py-2 text-dark fixed-bottom">
+                <div className="container">
+                    <p className="mb-1">&copy; 2025 Food Delivery Service. All rights reserved.</p>
+                </div>
             </footer>
         </div>
+        
     );
 }
 

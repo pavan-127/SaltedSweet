@@ -13,7 +13,7 @@ function Home() {
     useEffect(() => {
         const scrollY = sessionStorage.getItem("scrollPosition");
         if (scrollY) {
-            window.scrollTo(0, parseInt(scrollY));
+            window.scrollTo(0, 0);
         }
 
         const handleScroll = () => {
@@ -39,7 +39,7 @@ function Home() {
 
             {/* Categories Section */}
             <section id="categories" className="container my-5">
-                <h2 className="text-center mb-4">🥗 Browse by Categories</h2>
+                <h2 className="text-center text-white mb-4">🥗 Browse by Categories</h2>
                 <div className="row g-4 justify-content-center">
                     <div className="col-md-3 category-card">
                         <a href="/veg-items" className="text-decoration-none">
@@ -70,8 +70,8 @@ function Home() {
 
             {/* Featured Products Section */}
             <section className="container my-5">
-                <h2 className="text-center mb-4">🍕 Featured Products</h2>
-                <div className="row g-4 justify-content-center">
+                <h2 className="text-center text-white mb-4">🍕 Featured Products</h2>
+                <div className="row g-5 justify-content-center">
                     {featuredItems.map((item, index) => (
                         <div className="col-md-4 feature-card" key={index}>
                             <div className="card text-center shadow-lg border-0 feature-hover">

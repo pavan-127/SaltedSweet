@@ -90,7 +90,7 @@ function Category() {
            
             <header className="navbar">
                 <div className="navbar-container">
-                    <Link className="navbar-brand" to="/home">
+                    <Link className="navbar-brand " to="/home">
                         🍽️ Salted & Sweet
                     </Link>
 
@@ -102,6 +102,7 @@ function Category() {
                         <Link className="nav-link" to="/orders">Orders</Link>
                         <Link className="nav-link" to="/about-us">About Us</Link>
                         <Link className="nav-link" to="/contact-us">Contact Us</Link>
+                        
                     </nav>
 
                     <div className="navbar-right">

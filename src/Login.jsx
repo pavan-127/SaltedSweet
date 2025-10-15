@@ -2,15 +2,15 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// A simple component for styling the background, consistent with the Create Account page
+
 const PageBackground = ({ children }) => (
     <div style={{
         background: "linear-gradient(to right, #89f7fe, #66a6ff)",
-        minHeight: "100vh",
+        minHeight: "85vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "20px"
+        padding: "15px"
     }}>
         {children}
     </div>
@@ -19,7 +19,7 @@ const PageBackground = ({ children }) => (
 function Login() {
     const navigate = useNavigate();
 
-    // Initialize state directly from localStorage. This is more efficient.
+    
     const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem("isLoggedIn") === "true");
     const [username, setUsername] = useState(localStorage.getItem("username") || "");
     const [password, setPassword] = useState("");
@@ -28,7 +28,7 @@ function Login() {
     // Handle Login
     const handleLogin = (e) => {
         e.preventDefault();
-        setError(""); // Reset error on new attempt
+        setError(""); 
 
         // Demo credentials
         if (username === "Pavan" && password === "Pavan") {
@@ -37,10 +37,6 @@ function Login() {
             localStorage.setItem("isLoggedIn", "true");
             localStorage.setItem("username", username);
 
-            // Navigate to the home page.
-            // NOTE: We removed window.location.reload() as it's an anti-pattern in React.
-            // A parent component (like App.js) should manage and pass down the login
-            // state to ensure all components (like a Navbar) update correctly.
             navigate("/");
         } else {
             setError("Invalid username or password. Please try again.");
@@ -60,7 +56,7 @@ function Login() {
 
     return (
         <PageBackground>
-            <div className="card shadow-lg p-4" style={{ maxWidth: "450px", width: "100%", border: "none", borderRadius: "15px" }}>
+            <div className="card shadow-lg p-5" style={{ maxWidth: "450px", width: "100%", border: "none", borderRadius: "15px" }}>
                 {isLoggedIn ? (
                     // --- LOGGED-IN VIEW ---
                     <div className="text-center">
@@ -72,7 +68,7 @@ function Login() {
                         />
                         <h4>Welcome, {username}!</h4>
                         <p className="text-muted">You are successfully logged in.</p>
-                        <button className="btn btn-danger w-100 mt-3" onClick={handleLogout}>
+                        <button className="btn btn-danger w-100 mt-4" onClick={handleLogout}>
                             Logout
                         </button>
                     </div>
@@ -120,6 +116,7 @@ function Login() {
                             <button className="btn btn-link" onClick={() => navigate('/forgot-password')}>
                                Forgot password?
                                 </button>
+                                
                             </div>
                         </form>
                         <hr />
@@ -128,9 +125,13 @@ function Login() {
                             <button className="btn btn-outline-success w-100" onClick={() => navigate("/create-account")}>
                                 Create New Account
                             </button>
+                            
                         </div>
+                 
+          
                     </div>
                 )}
+                
             </div>
         </PageBackground>
     );

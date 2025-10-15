@@ -1,7 +1,7 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css"
-import "./index.css"
+
 import NonVeg from './Pages/NonVeg';
 import AboutUs from './Pages/AboutUs';
 import ContactUs from './Pages/ContactUs';
@@ -41,6 +41,8 @@ function App()
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/orders" element={<Order />} />
+          
+          
          
                 <Route path="/:category" element={<store />} />
                 <Route path="/:category/:subcategory" element={<store />} />

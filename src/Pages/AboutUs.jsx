@@ -7,15 +7,15 @@ function AboutUs() {
                 <div className="row justify-content-center">
                     <div className="col-md-10">
                         <h1 className="text-center mt-5 mb-4">
-                            <span className="text-primary">About Us</span>
+                            <span className="text-white">About Us</span>
                         </h1>
-                        <p className="text-justify lead">
+                        <p className="text-justify lead text-white">
                             Welcome to <strong>Salted & Sweet Service</strong>, your go-to destination for fast, fresh, and delicious meals delivered right to your doorstep! We are dedicated to providing high-quality food with the convenience you deserve.
                         </p>
                         <div className="row mt-5">
                             <div className="col-md-6">
                                 <h3 className="text-success">🍽️ Our Mission</h3>
-                                <p>
+                                <p className="text-white">
                                     Our mission is to bring the best flavors from your favorite restaurants to your table with just a few clicks. Whether you crave comfort food, healthy meals we have it all.
                                 </p>
                             </div>
@@ -32,14 +32,16 @@ function AboutUs() {
                         </div>
                         <div className="text-center mt-5">
                             <h3 className="text-primary">📍 Our Presence</h3>
-                            <p>We are currently serving multiple cities and expanding rapidly to bring delicious meals to more customers.</p>
+                            <p className="text-white">We are currently serving multiple cities and expanding rapidly to bring delicious meals to more customers.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <footer className="text-center py-1 text-light fixed-bottom border-top -webkit-backdrop-filter: blur(15px);">
-                <p className="mb-0">&copy; 2025 Food Delivery Service. All rights reserved.</p>
+           <footer className="Footer text-center py-2 text-dark fixed-bottom">
+                <div className="container">
+                    <p className="mb-1">&copy; 2025 Food Delivery Service. All rights reserved.</p>
+                </div>
             </footer>
         </>
     );

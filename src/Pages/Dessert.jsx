@@ -35,7 +35,7 @@ function Dessert() {
     return (
         <>
             <section className="container py-5">
-                <h1 className="text-center text-primary mt-5 mb-4">Dessert Items</h1>
+                <h1 className="text-center text-white mt-5 mb-4">Dessert Items</h1>
                 <div className="row">
                     {/* Filter Button */}
                     <div className="text-center mb-3">
@@ -94,8 +94,10 @@ function Dessert() {
             </section>
 
             {/* Footer */}
-           <footer className="text-center py-1 text-light fixed-bottom border-top -webkit-backdrop-filter: blur(15px);">
-                <p className="mb-0">&copy; 2025 Food Delivery Service. All rights reserved.</p>
+           <footer className="Footer text-center py-2 text-dark">
+                <div className="container">
+                    <p className="mb-1">&copy; 2025 Food Delivery Service. All rights reserved.</p>
+                </div>
             </footer>
         </>
     );
