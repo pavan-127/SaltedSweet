@@ -5,17 +5,18 @@ body {
   box-sizing: border-box;
   height: max-content;
   padding-bottom: 10px;
+  margin: 0px;
 }
 #hero {
 
-  height: 500px;
+  height: 350px;
   color: white;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
  
-  background-image: url("/image/Food1.jpg");
+  background-image: url("public/image/Food1.jpg");
  text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   background-repeat: no-repeat;
@@ -101,23 +102,7 @@ justify-content: center;
   background-color: #28a745;
   opacity: 0.8;
 }
-/* Footer */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    -webkit-backdrop-filter: blur(10px);
-    
-   /*height: var(--navbar-height);*/
-    background: var(--navbar-bg);
 
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-  
-
-
-}
 
 /*veg*/
 .veg-card {
