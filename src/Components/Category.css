@@ -2,13 +2,10 @@
 
 :root {
     --primary-color: #ff4757;
-    /* UPDATED: Changed from solid white to a semi-transparent white */
-    --navbar-bg: rgba(255, 255, 255, 0.7); 
+    --navbar-bg: rgba(255, 255, 255, 0.501); 
     --text-dark: #2c3e50;
     --text-light: #ffffff;
-    --border-color: #e0e0e0;
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    --navbar-height: 70px;
 }
 
 body {
@@ -16,7 +13,7 @@ body {
     margin-top: var(--navbar-height);
     background-color: #f9f9f9;
     /* Add a background image to see the blur effect properly */
-    background-image: url('https://www.shutterstock.com/image-photo/empty-wooden-table-top-lights-600nw-2479525487.jpg');
+    background-image: url("public/image/bg.png");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -374,8 +371,4 @@ padding: 8px 20px;
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     --navbar-height: 150px;
 }
-
-  
-
-
 }
